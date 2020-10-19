@@ -7,5 +7,5 @@ class Homework3:
 if __name__ == '__main__':
 
     my_Homework3 = Homework3()
-    print(list(fibonacci(1)))
+    print(list(fibonacci(10)))
 

@@ -10,6 +10,7 @@
 def fibonacci(n):
     '''
     This generator will compute the first n fibonacci numbers
+    excluding 0.
 
     :param n: the index of fibonacci numbers
     :return:
@@ -22,7 +23,9 @@ def fibonacci(n):
     seed_0, seed_1 = 0, 1
     counter = 0
     while True:
-        if (counter > n): return
-        yield seed_0
+        if (counter > n): # break at end of n size sequence
+            return
+        if seed_0 > 0: # exclude 0 from list
+            yield seed_0
         seed_0, seed_1 = seed_1, seed_0 + seed_1
         counter += 1
