@@ -15,9 +15,14 @@ def fibonacci(n):
     :return:
     '''
 
-    a, b, counter = 0, 1, 0
+    # check that n is positive integer
+    assert type(n) == int
+    assert n > 0
+
+    seed_0, seed_1 = 0, 1
+    counter = 0
     while True:
         if (counter > n): return
-        yield a
-        a, b = b, a + b
+        yield seed_0
+        seed_0, seed_1 = seed_1, seed_0 + seed_1
         counter += 1
