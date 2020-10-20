@@ -42,8 +42,7 @@ def slide_window(x,width,increment):
         # adds elements to entry for the size of the width
         for i in range(width):
             # if list is size of width, we are at end of list
-            if len(x) <= width:
-                list_of_lists.append(x)
+            if len(x) < width:
                 print(list_of_lists)
                 return list_of_lists
             entry.append(x[i])

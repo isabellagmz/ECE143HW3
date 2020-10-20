@@ -15,7 +15,6 @@ if __name__ == '__main__':
     # num_days(2019,2)
     # num_years(2000,2020)
     # week(2020,2,29)
-    x=list(range(15))
-    x = []
+    x=list(range(18))
     slide(x,5,2)
 
